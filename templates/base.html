@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang = "en">
+<head>
+	<meta charset = "utf-8">
+<meta name = "viewport" content = "width=device-widht, initial-scale=1.0">
+<meta name = "description" content = "A layout example that shows off a blog page with a list of posts.">
+	<title>A Sample Blog</title>
+	<link rel = "stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel = "stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+	<link rel = "stylesheet" href="http://purecss.io/combo/1.18.13?/css/layouts/blog.css">
+</head>
+
+<body>
+<div id="layout" class="pure-g">
+	<div class="sidebar pure-u-1 pure-u-md-1-4">
+		<div class="header">
+            <h1 class="brand-title">A Sample Blog</h1>
+            <h2 class="brand-tagline">Creating a blog layout using Pure</h2>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="http://purecss.io" class="pure-button">Pure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://yuilibrary.com" class="pure-button">YUI Library</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+	</div>
+	<div class="content pure-u-1 pure-u-md-3-4">
+		<div>
+			{% block content %}
+			{% endblock %}
+			<div class="pure-menu pure-menu-horizontal">
+                    <ul>
+                        <li class="pure-menu-item"><a class="pure-menu-link" href="http://purecss.io/">About</a></li>
+                        <li class="pure-menu-item"><a class="pure-menu-link" href="http://twitter.com/yuilibrary/">Twitter</a></li>
+                        <li class="pure-menu-item"><a class="pure-menu-link" href="http://github.com/yahoo/pure/">GitHub</a></li>
+                    </ul>
+                </div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
